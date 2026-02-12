@@ -1,0 +1,32 @@
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+include = "\\.pyi?$"
+exclude = '''
+(
+    /(
+        \.git
+        | \.mypy_cache
+        | \.pytest_cache
+        | build
+        | dist
+        | venv
+        | \.venv
+    )/
+)
+'''
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = [
+    "E203",  # whitespace before ':', conflicts with Black
+    "W503",  # line break before binary operator, conflicts with Black
+]
+exclude = [
+    ".git",
+    "__pycache__",
+    "build",
+    "dist",
+    "venv",
+    ".venv",
+]

@@ -53,7 +53,7 @@ Orchestration is handled by Azure Data Factory:
 
 - Gold tables are used by Power BI dashboards for interactive exploration.
 - Data points are created in **Databricks SQL Warehouse** for efficient data loading/querying by Power BI.
-- Power BI data model implements **star schema** design for performance, with fact tables for article metrics and dimension tables for tags, user data, DateTable etc.
+- Power BI data model implements **star schema** design for performance, with fact tables for article metrics and dimension tables for exploded tags, user data, DateTable.
 
 ---
 
@@ -98,14 +98,14 @@ Transformed and cleaned data optimized for analysis. Key transformations include
 Analytical tables optimized for BI. Main tables include:
 
 - articles_fact (articles stats for overall trends and engagement analysis)
-- tags_fact (exploded tags with counts by month/year for trend analysis)
+- tags_dim, user_dim, DateTable (exploded tags, user info and date dimension for detailed analysis)
 - titles (for title keywords analysis)
 
 ***Engineering Decisions:***
 
 - Only business-ready aggregates stored here
-- Designed for Power BI performance
-- Explode tags in Gold for easier analysis
+- Why **star schema**? Optimized for Power BI performance and ease of use, with clear separation of facts and dimensions.
+- Explode tags in Gold for easier analysis, store user info in separate dimension table to avoid redundancy
 
 ---
 

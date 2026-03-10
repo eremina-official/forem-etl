@@ -26,6 +26,28 @@ Orchestration is handled by Azure Data Factory:
 
 ---
 
+### Key Insights
+
+**The AI Takeover: 3% → 23% in Three Years**
+
+3% of articles mentioned AI in 2022, skyrocketing to 23% by 2026, reflecting the tech community's growing focus on artificial intelligence.
+
+![Architecture Diagram](bi/ai-tag-devto.png)
+
+**Top Trending Topics**
+
+Across the dataset, the most popular tags were `#ai`, `#programming` and `#webdev`, consistently dominating the conversation on `dev.to` over the years.
+
+![Architecture Diagram](bi/top-tags.png)
+
+**Average Reading Time**
+
+Nearly 90% of all articles take 6 minutes or less to read.
+
+![Architecture Diagram](bi/reading-time.png)
+
+---
+
 ### Pipeline Description:
 
 **Extract**

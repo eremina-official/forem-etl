@@ -46,6 +46,8 @@ Nearly 90% of all articles take 6 minutes or less to read.
 
 ![Architecture Diagram](bi/reading-time.png)
 
+Full insights and visualizations in the [article](https://dev.to/marina_eremina/i-analyzed-1-million-devto-articles-2022-2026-heres-what-the-data-reveals-44gm).
+
 ---
 
 ### Pipeline Description:
